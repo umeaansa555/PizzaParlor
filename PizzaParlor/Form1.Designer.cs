@@ -43,6 +43,7 @@ namespace PizzaParlor
             this.inputBox.Name = "inputBox";
             this.inputBox.Size = new System.Drawing.Size(230, 29);
             this.inputBox.TabIndex = 0;
+            this.inputBox.TextChanged += new System.EventHandler(this.inputBox_TextChanged);
             // 
             // outputLabel
             // 

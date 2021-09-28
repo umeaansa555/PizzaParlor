@@ -11,8 +11,9 @@ using System.Windows.Forms;
 namespace PizzaParlor
 {
     public partial class Form1 : Form
-    {            
-        double slicePrice;
+    {
+
+        double slicePrice = 3.25;
         double sliceCount;
         double totalPrice;
 
@@ -20,15 +21,22 @@ namespace PizzaParlor
         {
             InitializeComponent();
 
+            
         }
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
-            slicePrice = 3.25;
-            sliceCount = inputBox.Text;
+            sliceCount = Convert.ToInt32(inputBox.Text);
             totalPrice = sliceCount * slicePrice;
+
             outputLabel.Text = $"{totalPrice}";
-            
+            outputLabel.Text = $"\n The price of {sliceCount} slice(s) is {totalPrice.ToString("C")}.";
+
+        }
+
+        private void inputBox_TextChanged(object sender, EventArgs e)
+        {
+            //sliceCount = inputBox.Text;
         }
     }
 }
