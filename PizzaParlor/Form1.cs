@@ -26,12 +26,19 @@ namespace PizzaParlor
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
-            sliceCount = Convert.ToInt32(inputBox.Text);
-            totalPrice = sliceCount * slicePrice;
+            try
+            {
+                sliceCount = Convert.ToInt32(inputBox.Text);
+                totalPrice = sliceCount * slicePrice;
 
-            outputLabel.Text = $"{totalPrice}";
-            outputLabel.Text = $"\n The price of {sliceCount} slice(s) is {totalPrice.ToString("C")}.";
+                outputLabel.Text = $"{totalPrice}";
+                outputLabel.Text = $" The price of {sliceCount} slice(s) is {totalPrice.ToString("C")}.";
+            }
 
+            catch
+            {
+                outputLabel.Text = $"Please enter a whole number.";
+            }
         }
 
         private void inputBox_TextChanged(object sender, EventArgs e)
