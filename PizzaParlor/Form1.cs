@@ -37,7 +37,7 @@ namespace PizzaParlor
 
             catch
             {
-                outputLabel.Text = $"Please enter a whole number.";
+                outputLabel.Text = $"We can't serve {inputBox.Text} slices.";
             }
         }
 
