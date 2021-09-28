@@ -60,9 +60,9 @@ namespace PizzaParlor
             // calculateButton
             // 
             this.calculateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculateButton.Location = new System.Drawing.Point(150, 213);
+            this.calculateButton.Location = new System.Drawing.Point(130, 207);
             this.calculateButton.Name = "calculateButton";
-            this.calculateButton.Size = new System.Drawing.Size(112, 30);
+            this.calculateButton.Size = new System.Drawing.Size(157, 30);
             this.calculateButton.TabIndex = 2;
             this.calculateButton.Text = "Calculate Cost";
             this.calculateButton.UseVisualStyleBackColor = true;
